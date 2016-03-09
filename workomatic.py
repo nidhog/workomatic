@@ -3,8 +3,9 @@
 import sys
 import json
 import datetime
+import os
 
-activity_store = "activities/activity_store.work"
+activity_store = os.path.dirname(os.path.abspath(__file__))+"/activities/activity_store.work"
 
 class FileHandler(object):
     """FileHandler class
